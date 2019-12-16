@@ -1,0 +1,5 @@
+title: Course Title Here
+description: Course description goes here.
+programming_language: r
+from: "r-base-prod:v1.0.2"
+#from: "tidyverse-base-prod:v1.0.2"
