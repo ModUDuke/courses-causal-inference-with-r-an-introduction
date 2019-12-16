@@ -1,5 +1,22 @@
-title: Causal Inference with R - An Introduction
-description: Course description goes here.
+title: Causal Inference with R - Introduction
+description: Welcome to the 1st course in our 7 part series on causal inference
+  concepts and methods created by Duke University with support from eBay, Inc. Designed to teach you causal inference concepts, methods,
+  and how to code in R with realistic data, this introduction focuses on how to interpret
+  treatment effects, and how to explore and derive key summary statistics from dataframes.
+  We’ll stay away from dense statistical math and focus instead on higher level concepts
+  that data scientists need to always consider when examining and making inferences
+  about data. The course instructors and creators are Dr. Matt Masten (Duke University), James Speckart (Duke), Brian Aronson (Duke), Dr. Tyler Ransom (University of Oklahoma), Dr. Bentley Coffey (University of South Carolina), and Alexandra Cooper (Duke).
 programming_language: r
+instructors:
+- matt.masten@duke.edu
+- speckart@duke.edu
+- bdaronson@gmail.com
+- ransom@ou.edu
+- bentleygcoffey@gmail.com
+- cooper@duke.edu
+- weston@datacamp.com
+university: DataCamp
+difficulty_level: 2
+time_needed: 4 hours
 from: "r-base-prod:v1.0.2"
 #from: "tidyverse-base-prod:v1.0.2"
