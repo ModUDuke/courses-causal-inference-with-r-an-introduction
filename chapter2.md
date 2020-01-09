@@ -50,7 +50,7 @@ Since we found no significant errors in their dataset in Chapter 1, Puritan Whea
 
 `@pre_exercise_code`
 ```{r}
-library(dplyr)
+library(plyr)
 n=731
 set.seed(1)
 #Create rnorm function that allows for min and max
@@ -134,7 +134,7 @@ Puritan Wheat Inc. wants to know if there are any factors that might contribute 
 
 `@pre_exercise_code`
 ```{r}
-library(dplyr)
+library(plyr)
 n=731
 set.seed(1)
 #Create rnorm function that allows for min and max
@@ -328,7 +328,7 @@ With the dataframe, `UnterHR`, determine whether there is a negative or positive
 
 `@pre_exercise_code`
 ```{r}
-library(dplyr)
+library(plyr)
 set.seed(1)
 n=382
 #Dataframe
@@ -394,7 +394,7 @@ However, his chief operating officer (COO) warns him that reducing the size of H
 
 `@pre_exercise_code`
 ```{r}
-library(dplyr)
+library(plyr)
 set.seed(1)
 n=382
 #Dataframe
@@ -457,7 +457,7 @@ Let's further analyze the heterogeneous effect of the treatment on men vs. women
 
 `@pre_exercise_code`
 ```{r}
-library(dplyr)
+library(plyr)
 set.seed(1)
 n=382
 #Dataframe
