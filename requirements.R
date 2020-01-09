@@ -3,8 +3,7 @@ library(remotes)
 ##### Install specific package versions from CRAN #####
 
 install_version("ggplot2", "3.0.0")
-install_version("dplyr", version = NULL, repos = getOption("https://cloud.r-project.org"), type = getOption("both"), quiet = FALSE)
-install_version("GridExtra", version = NULL, repos = getOption("https://cloud.r-project.org"), type = getOption("both"), quiet = FALSE)
+
 # install_version("tidyr", "0.8.1")
 # install_version("purrr", "0.2.5")
 
