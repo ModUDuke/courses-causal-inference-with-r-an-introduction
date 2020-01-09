@@ -240,7 +240,7 @@ The Hammers decided to expand their sample to examine how effective their social
 
 `@pre_exercise_code`
 ```{r}
-library(dplyr)
+library(plyr)
 n=62
 set.seed(1)
 #Create rnorm function that allows for min and max
@@ -342,7 +342,7 @@ Although we have detailed information about exactly how many ads each participan
 
 `@pre_exercise_code`
 ```{r}
-library(dplyr)
+library(plyr)
 n=62
 set.seed(1)
 #Create rnorm function that allows for min and max
@@ -430,7 +430,7 @@ Let's now determine if the treatment effect of the Hammer's ad campaign could be
 
 `@pre_exercise_code`
 ```{r}
-library(dplyr)
+library(plyr)
 n=62
 set.seed(1)
 #Create rnorm function that allows for min and max
