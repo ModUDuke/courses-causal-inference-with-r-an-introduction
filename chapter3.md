@@ -309,9 +309,7 @@ head(Baseball)
 
 `@sct`
 ```{r}
-test_error()
-test_function("head", incorrect_msg = "Did you use the `head` function?")
-test_function("nrow", incorrect_msg = "Did you use the `nrow` function?")
+ex() %>% check_error()
 ex() %>% check_object("Solution1") %>% check_equal()
 ex() %>% check_object("Solution2") %>% check_equal()
 success_msg("Good work! You should always explore your data before running analyses. These are very typical steps that one might take")
@@ -405,7 +403,7 @@ Baseball$ExpMonths<-Baseball$month=="July" | Baseball$month=="August" | Baseball
 
 `@sct`
 ```{r}
-    test_error()
+    ex() %>% check_error()
     ex() %>% check_object("Solution2") %>% check_equal()
     success_msg("Good work! The ad campaign had a positive average treatment effect. However, there are several potential confounders that we might want to consider before declaring victory. Let's explore some in the next few questions.")
 ```
