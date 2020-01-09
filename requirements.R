@@ -4,6 +4,7 @@ library(remotes)
 
 install_version("ggplot2", "3.0.0")
 install_version("dplyr", "0.7.5")
+install_version("GridExtra", version = NULL, repos = getOption("https://cloud.r-project.org"), type = getOption("source"), quiet = FALSE))
 # install_version("tidyr", "0.8.1")
 # install_version("purrr", "0.2.5")
 
