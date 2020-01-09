@@ -280,10 +280,10 @@ Eddie's then surveyed three people who were not regular Eddie's customers. Their
 `@sample_code`
 
 `@feedback`
-- Correct! CATE(regular) = [(-10) + (6) + (-5)]/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3. So the difference is -3 - 1/3 = -3.33. We see that the average effect on regular customers is much different than on non-regulars: the regular customers will buy a lot less ice cream on average.
-- Try again: CATE(regular) = [(-10) + (6) + (-5)]/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3.
-- Try again: CATE(regular) = [(-10) + (6) + (-5)]/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3.
-- Try again: CATE(regular) = [(-10) + (6) + (-5)]/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3.
+- Correct! CATE(regular) = (-10 + 6 + (-5)/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3. So the difference is -3 - 1/3 = -3.33. We see that the average effect on regular customers is much different than on non-regulars: the regular customers will buy a lot less ice cream on average.
+- Try again: CATE(regular) = (-10 + 6 + (-5))/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3.
+- Try again: CATE(regular) = (-10 + 6 + (-5))/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3.
+- Try again: CATE(regular) = (-10 + 6 + (-5))/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3.
 
 
 ---
@@ -385,7 +385,7 @@ Since reducing the size of HR seems to reduce the rate of employee turnover, the
 However, his chief operating officer (COO) warns him that reducing the size of HR might be unpopular among certain minority groups within the company, particularly among women. The COO sends the CEO a figure (illustrated in the R workspace) showing the results of his experiment among men and women. Which of the following does the figure suggest?
 
 `@instructions`
-- While the pooled average treatment effect is slightly negative, and the average treatment effect for men is negative, the average treatment effect for women is positive.
+- [While the pooled average treatment effect is slightly negative, and the average treatment effect for men is negative, the average treatment effect for women is positive.]
 - While the pooled average treatment effect is slightly positive, and the average treatment effect for men is positive, the average treatment effect for women is negative.
 - While the pooled average treatment effect is slightly negative, and the average treatment effect for men is positive, the average treatment effect for women is negative.
 - While the pooled average treatment effect is slightly positive, and the average treatment effect for men is negative, the average treatment effect for women is positive.
@@ -421,14 +421,12 @@ p<-ggplot(df, aes(x=`Control and Treatment Groups`,y=`Percent Intending to Quit`
     p+geom_point(size=3)+geom_line(size=2)+scale_y_continuous(label = percent,limits = c(0,1))
 ```
 
-`@sct`
-```{r}
-msg1 = "Good job! This is an example of a heterogeneous average treatment effect - the treatment has different effects on men and women. However, when men and women are pooled, this heterogeneity is masked."
-msg2 = "Whoa! While you're right that there are different effects for men and for women, it looks like you're confused about which effects are negative and which are positive.  Try again."
-msg3 = "While you're right that the pooled effects are negative and there are different effects for men and for women, it looks like you're confused about which gender-specific effects are negative and which are positive. Look again."
-msg4 = "You're right about the gender-specific effects, but not the pooled effects. Check your results again."
-test_mc(correct = 1, feedback_msgs = c(msg1,msg2,msg3,msg4))
-```
+`@feedback`
+- Good job! This is an example of a heterogeneous average treatment effect - the treatment has different effects on men and women. However, when men and women are pooled, this heterogeneity is masked.
+- Whoa! While you're right that there are different effects for men and for women, it looks like you're confused about which effects are negative and which are positive. Try again.
+- While you're right that the pooled effects are negative and there are different effects for men and for women, it looks like you're confused about which gender-specific effects are negative and which are positive. Look again.
+- You're right about the gender-specific effects, but not the pooled effects. Check your results again.
+
 
 ---
 
