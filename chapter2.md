@@ -50,7 +50,7 @@ Since we found no significant errors in their dataset in Chapter 1, Puritan Whea
 
 `@pre_exercise_code`
 ```{r}
-library(plyr)
+library(dplyr)
 n=731
 set.seed(1)
 #Create rnorm function that allows for min and max
@@ -109,8 +109,7 @@ mean(Soggy$time[Soggy$cereal=="TechnoCrunch"])
 
 `@sct`
 ```{r}
-test_error()
-test_function("mean", incorrect_msg = "Did you use the `mean` function?")
+ex() %>% check_error()
 success_msg("Good work! It appears that TechnoCrunch's crunchiness lasts longer than does NeoPuffs. But could there be any factors that are confounding this relationship?")
 ```
 
@@ -134,7 +133,7 @@ Puritan Wheat Inc. wants to know if there are any factors that might contribute 
 
 `@pre_exercise_code`
 ```{r}
-library(plyr)
+library(dplyr)
 n=731
 set.seed(1)
 #Create rnorm function that allows for min and max
@@ -183,13 +182,12 @@ set.seed(1)
 `@solution`
 ```{r}
 cor(Soggy$milk,Soggy$time)
-    cor(Soggy$fiber,Soggy$time)
+cor(Soggy$fiber,Soggy$time)
 ```
 
 `@sct`
 ```{r}
-test_error()
-test_function("cor", incorrect_msg = "Did you use the `cor` function?")
+ex() %>% check_error()
 success_msg("Good work! There is a positive correlation between fiber and time. It is possible that this correlation might confound the relationship between time and cereal brand, but Puritan Wheat Inc. seems to be satisfied with these results!")
 ```
 
@@ -328,7 +326,7 @@ With the dataframe, `UnterHR`, determine whether there is a negative or positive
 
 `@pre_exercise_code`
 ```{r}
-library(plyr)
+library(dplyr)
 set.seed(1)
 n=382
 #Dataframe
@@ -365,8 +363,8 @@ Solution1<- mean(UnterHR$LeaveJob[UnterHR$Treatment==1])-mean(UnterHR$LeaveJob[U
 
 `@sct`
 ```{r}
-test_error()
-test_object("Solution1")
+ex() %>% check_error()
+ex() %>% check_object("Solution1") %>% check_equal()
 success_msg("Good work! It seems that reducing the size of HR reduced Unter employees' intentions to leave their jobs")
 ```
 
@@ -394,7 +392,7 @@ However, his chief operating officer (COO) warns him that reducing the size of H
 
 `@pre_exercise_code`
 ```{r}
-library(plyr)
+library(dplyr)
 set.seed(1)
 n=382
 #Dataframe
@@ -457,7 +455,7 @@ Let's further analyze the heterogeneous effect of the treatment on men vs. women
 
 `@pre_exercise_code`
 ```{r}
-library(plyr)
+library(dplyr)
 set.seed(1)
 n=382
 #Dataframe
@@ -498,7 +496,7 @@ Solution2 <- mean(UnterHR$LeaveJob[UnterHR$Treatment==1 & UnterHR$Female==1])-me
 
 `@sct`
 ```{r}
-test_error()
+ex() %>% check_error()
 ex() %>% check_object("Solution1") %>% check_equal()
 ex() %>% check_object("Solution2") %>% check_equal()
 success_msg("Good work! We can see a clear difference in the treatment effect among men and women. This is a clear example of a conditional average treatment effect.")
