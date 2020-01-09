@@ -166,7 +166,7 @@ To get familiar with the data, follow the instructions below:
 
 `@pre_exercise_code`
 ```{r}
-library(dplyr)
+library(plyr)
 n=731
 set.seed(1)
 #Create rnorm function that allows for min and max
@@ -246,7 +246,7 @@ Follow the instructions below:
 
 `@pre_exercise_code`
 ```{r}
-library(dplyr)
+library(plyr)
 n=731
 set.seed(1)
 #Create rnorm function that allows for min and max
@@ -352,7 +352,7 @@ Before running any direct comparisons between TechnoCrunch and NeoPuffs, Puritan
 
 `@pre_exercise_code`
 ```{r}
-library(dplyr)
+library(plyr)
 n=731
 set.seed(1)
 #Create rnorm function that allows for min and max
@@ -432,7 +432,7 @@ Before running any direct comparisons between TechnoCrunch and NeoPuffs, Puritan
 
 `@pre_exercise_code`
 ```{r}
-library(dplyr)
+library(plyr)
 n=731
 set.seed(1)
 #Create rnorm function that allows for min and max
@@ -647,7 +647,7 @@ Using the dataset, `Nails`, find out whether Britney is at blame for the loss. S
 ```{r}
 n=34
 set.seed(1)
-library(dplyr)
+library(plyr)
 library(ggplot2)
 #Create rnorm function that allows for min and max
   rtnorm <- function(n, mean, sd, min = -Inf, max = Inf){
