@@ -240,7 +240,7 @@ The Hammers decided to expand their sample to examine how effective their social
 
 `@pre_exercise_code`
 ```{r}
-library(plyr)
+library(dplyr)
 n=62
 set.seed(1)
 #Create rnorm function that allows for min and max
@@ -342,7 +342,7 @@ Although we have detailed information about exactly how many ads each participan
 
 `@pre_exercise_code`
 ```{r}
-library(plyr)
+library(dplyr)
 n=62
 set.seed(1)
 #Create rnorm function that allows for min and max
@@ -430,7 +430,7 @@ Let's now determine if the treatment effect of the Hammer's ad campaign could be
 
 `@pre_exercise_code`
 ```{r}
-library(plyr)
+library(dplyr)
 n=62
 set.seed(1)
 #Create rnorm function that allows for min and max
@@ -491,8 +491,7 @@ dfMonth
 
 `@sct`
 ```{r}
-test_error()
-test_function("merge", incorrect_msg = "Did you use the `merge` function?")
+ex() %>% check_error()
 success_msg("Good work! This is a common way to merge data from different sized dataframes together. Now we can see whether these other variables are associated with attending baseball games and whether they may be confounding the relationship between baseball attendance and  number of ads served.")
 ```
 
@@ -599,7 +598,7 @@ Solution5<-"decrease"
 
 `@sct`
 ```{r}
-    test_error()
+ex() %>% check_error()
 ex() %>% check_object("Solution4") %>% check_equal()
 ex() %>% check_object("Solution5") %>% check_equal()
 
@@ -700,7 +699,7 @@ Solution4<-"decrease"
 
 `@sct`
 ```{r}
-    test_error()
+ex() %>% check_error()
 ex() %>% check_object("Solution3") %>% check_equal()
 ex() %>% check_object("Solution4") %>% check_equal()
 
