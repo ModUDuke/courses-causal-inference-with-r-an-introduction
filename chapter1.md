@@ -166,7 +166,7 @@ To get familiar with the data, follow the instructions below:
 
 `@pre_exercise_code`
 ```{r}
-library(plyr)
+library(dplyr)
 n=731
 set.seed(1)
 #Create rnorm function that allows for min and max
@@ -246,7 +246,7 @@ Follow the instructions below:
 
 `@pre_exercise_code`
 ```{r}
-library(plyr)
+library(dplyr)
 n=731
 set.seed(1)
 #Create rnorm function that allows for min and max
@@ -352,7 +352,7 @@ Before running any direct comparisons between TechnoCrunch and NeoPuffs, Puritan
 
 `@pre_exercise_code`
 ```{r}
-library(plyr)
+library(dplyr)
 n=731
 set.seed(1)
 #Create rnorm function that allows for min and max
@@ -432,7 +432,7 @@ Before running any direct comparisons between TechnoCrunch and NeoPuffs, Puritan
 
 `@pre_exercise_code`
 ```{r}
-library(plyr)
+library(dplyr)
 n=731
 set.seed(1)
 #Create rnorm function that allows for min and max
@@ -647,7 +647,7 @@ Using the dataset, `Nails`, find out whether Britney is at blame for the loss. S
 ```{r}
 n=34
 set.seed(1)
-library(plyr)
+library(dplyr)
 library(ggplot2)
 #Create rnorm function that allows for min and max
   rtnorm <- function(n, mean, sd, min = -Inf, max = Inf){
@@ -672,13 +672,15 @@ library(ggplot2)
 # 1) Using the `cor` function, estimate whether the variables `painted` and `wins` within the dataset `Nails` are correlated.
 
 
+
 # 2) Using the `ggplot` function, generate a scatterplot and regression line showing the above correlation. To do this, replace "df", "x1", and "y1", with the dataset name, and names of the x and y axes. None of these should be in quotes.
 
   ggplot(data=df, aes(x=x1, y=y1)) + 
   geom_jitter(width = 0, height = 0.1) +
   geom_smooth(method = "lm", se = FALSE)
 
-# 3) Based on what we found the above, answer following: "Should Britney have painted her nails?" Replace Solution3 with one of the following answer options = a)Yes, b)No, c)It depends how they look. Answer with either "a", "b", or "c". 
+# 3) Based on what we found the above, answer following: "Should Britney have painted her nails?" Replace Solution3 with one of the following answer options = a) Yes, b) No, c) It depends how they look. Answer with either "a", "b", or "c". 
+
   Solution3<-""
 ```
 
@@ -692,8 +694,6 @@ cor(Nails$painted,Nails$wins)
 
 `@sct`
 ```{r}
-test_error()
-test_function("cor", incorrect_msg = "Did you use the `cor` function?")
-test_function("ggplot", incorrect_msg = "Did you use the `ggplot` function?")
-success_msg("Good work! We accepted all answers for Question 3, but we would argue that 'c)It depends how they look' was the most correct of them.")
+ex() %>% check_error()
+success_msg("Good work! We accepted all answers for Question 3, but we would argue that 'c) It depends how they look' was the most correct of them.")
 ```
