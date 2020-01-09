@@ -218,9 +218,7 @@ head(Soggy$time)
 
 `@sct`
 ```{r}
-test_error()
-test_function("head", incorrect_msg = "Did you use the `head` function?")
-test_function("tail", incorrect_msg = "Did you use the `tail` function?")
+ex() %>% check_error()
 success_msg("Good work! It is often important to get a sense of your data before running any analyses with it. Using the head and tail functions is a common and easy way to observe what your data actually looks like.")
 ```
 
@@ -297,9 +295,7 @@ class(Soggy$fiber)
 
 `@sct`
 ```{r}
-test_error()
-test_function("class", incorrect_msg = "Did you use the `class` function?")
-test_function("table", incorrect_msg = "Did you use the `table` function?")
+ex() %>% check_error()
 success_msg("Good work! The above functions will often come in handy as you continue to code in R. The class function is particularly important, because many functions only work with certain types of variables. For example, it is meaningless (and impossible) to estimate the 'mean' of a character variable.")
 ```
 
@@ -405,10 +401,7 @@ mean(Soggy$time)
 
 `@sct`
 ```{r}
-test_error()
-test_function("mean", incorrect_msg = "Did you use the `mean` function?")
-test_function("median", incorrect_msg = "Did you use the `median` function?")
-test_function("sd", incorrect_msg = "Did you use the `sd` function?")
+ex() %>% check_error()
 success_msg("Good work! As a reminder, the difference in the median and mean of a variable is that the median represents the 'middle' value of a variable whereas the mean represents what we tpyicially think of as the `average` value of a variable. These statistics are often meaningfully (excuse the pun) different; for example, a variable with a much higher mean than median often has observations that are extreme outliers that are much higher than the rest of the observations. Also, remember that the standard deviation is a measure of a variable's variance. If this variable's standard deviation was very high, it would suggest that that most observed values of the variable `time` were not very centered around their mean.")
 ```
 
@@ -486,9 +479,7 @@ min(Soggy$time[Soggy$cereal=="TechnoCrunch"])
 
 `@sct`
 ```{r}
-test_error()
-test_function("min", incorrect_msg = "Did you use the `min` function?")
-test_function("summary", incorrect_msg = "Did you use the `summary` function?")
+ex() %>% check_error()
 success_msg("Good work! As you may have noticed, the summary function is often a great tool for summarizing data, but in practice, you may find yourself needing the other functions as well. In addition, you will often need to `subset` or `select` values in a dataset or vector that meet a specific criteria. We recommend that you practice and become comfortable with subsetting techniques as you continue your learning!")
 ```
 
