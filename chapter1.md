@@ -54,7 +54,7 @@ One example we saw in the previous video was when a football player scored a tou
 
 `@feedback`
 - While some people believe that people at the top of a power hierarchy have the most causal impact, others believe the opposite, and probably the truth lies somewhere in the middle. Try again.
-- Correct, some of the credit. It’s the intuitive answer, and also the right one. The real world is really complex, and it can be hard to tell exactly what is the cause of an event. In general, without good data, it is best to assume that a variety of factors contribute to any outcome.)
+- Correct, some of the credit. It is the intuitive answer, and also the right one. The real world is really complex, and it can be hard to tell exactly what is the cause of an event. In general, without good data, it is best to assume that a variety of factors contribute to any outcome.)
 - This is an argument you will often hear among sports analysts, but team sports involve actors on both sides, so the causality will involve some combination of each, so try again.
 - While some form of astrological determinism may provoke an interesting philosophical viewpoint for some people, it’s not related to causal inference, so try again.
 
