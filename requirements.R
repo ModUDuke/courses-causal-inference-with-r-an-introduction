@@ -3,6 +3,7 @@ library(remotes)
 ##### Install specific package versions from CRAN #####
 
 install_version("ggplot2", "3.0.0")
+install_version("dplyr", "0.8.3")
 
 # install_version("tidyr", "0.8.1")
 # install_version("purrr", "0.2.5")
