@@ -44,10 +44,10 @@ skills: 1
 One example we saw in the previous video was when a football player scored a touchdown on a running play. When we examine how two events are connected in our data, whether it's from a football match or from the business world, we often want to figure out which factors are most responsible for causing our outcome. In the case of the football play we saw in the video, how much credit should we give the **coach** for calling that play?
 
 `@instructions`
-- All the credit: he chose the players on the field, he chose the play, he’s in complete control
+- All the credit: he chose the players on the field, he chose the play, he is in complete control
 - [Some of the credit: The players sometimes ignore the coach and just do what they want, and they have to react to what the other team is doing too]
-- None of the credit: The offense can only do what the defense allows, so it’s the defensive mistakes that creates the score
-- It’s not a valid question: the astrological position of the sun and the stars determined the outcome of the play when the universe was created, not the coaches or players.
+- None of the credit: The offense can only do what the defense allows, so it is the defensive mistakes that creates the score
+- It is not a valid question: the astrological position of the sun and the stars determined the outcome of the play when the universe was created, not the coaches or players.
 
 `@feedback`
 - While some people believe that people at the top of a power hierarchy have the most causal impact, others believe the opposite, and probably the truth lies somewhere in the middle. Try again.
