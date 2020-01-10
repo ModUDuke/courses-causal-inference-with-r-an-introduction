@@ -29,7 +29,10 @@ skills: 1
 
 Why are confounding variables a potential problem for causal inference?
 
-`@instructions`
+`@hint`
+
+
+`@possible_answers`
 - Because confounding variables prevent the treatment from being randomly assigned
 - [Because confounding variables might alter the association between the treatment and dependent variable]
 - Because confounders are not observed
@@ -38,7 +41,6 @@ Why are confounding variables a potential problem for causal inference?
 - Almost, but remember, the main reason we worry about confounders has to do with effects on the outcome, not on treatment assignment. Try again.
 - Correct! Confounders are called *confounders* for a reason---because when they are present, we cannot distinguish the effect of treatment from the effect of the confounder. To learn causal effects, we want to compare people with treatment and people without treatment. If those two groups of people differ in their values of some potential confounding variable, then we can't tell if differences in outcomes are due to differences in treatment, or differences in the confounder.
 - Unobserved variables are not always a problem in causal inference, because they may not have any effect on outomes. Try again
-
 
 ---
 
@@ -68,7 +70,10 @@ skills: 1
 
 Suppose this was the best DataCamp course ever, and over the course of the past hour, we delivered a cup of ice cream to every DataCamp user's front door. We surveyed our participants, and found out that half of them decided to eat our free ice cream. Can we be certain that providing this free ice cream increased the amount of ice cream that each user would have eaten today if we hadn't provided any free ice cream?
 
-`@instructions`
+`@hint`
+
+
+`@possible_answers`
 - Yes
 - [No]
 
@@ -104,14 +109,16 @@ skills: 1
 
 If I have an enormous amount of data, do I still have to worry about causal inference?
 
-`@instructions`
+`@hint`
+
+
+`@possible_answers`
 - [Yes]
 - No
 
 `@feedback`
 - Correct. Big data might give you more power to make statistical inferences with your data, but all statistics still need to be interpreted carefully in order to make any causal inferences about the patterns you see."
 - Big Data does not solve all problems by magic! No matter the size of your data, you will always need to think about how to interpret your results. Try again.
-
 
 ---
 
@@ -154,7 +161,10 @@ To find a causal effect, we need to develop a counterfactual. So let's see if ou
 
 Based on the average number of games attended per month in the first 3 months, what would you use as a conservative counterfactual for average number of games attended per month in the second 3 months?
 
-`@instructions`
+`@hint`
+
+
+`@possible_answers`
 - 0
 - [1]
 - 2
@@ -165,7 +175,6 @@ Based on the average number of games attended per month in the first 3 months, w
 - Correct. This person has gone to 3 games in 3 months, so on average this person goes to 1 game per month. If you are optimistic, you could read this as a rising trend leading to either +1 game per month, or even 2x games per month, but let’s just stick with the average of 1 game per month for now.
 - This could be a safe guess if you think they’ll continue at their last count. But they’ve shown variability before, so it’s probably wise to back off this. Try again.
 - This could be a safe guess if you think their attendance rate will keep increasing. But they’ve shown variability before, so it’s probably wise to back off this. Try again.
-
 
 ---
 
@@ -192,7 +201,10 @@ Let’s see what happened in the first month of the ad campaign for our individu
 
 Since the number of baseball games that this individual went to appears to increase after viewing 5 ads, can we conclude that the advertising campaign caused the individual to go to more games?
 
-`@instructions`
+`@hint`
+
+
+`@possible_answers`
 - Yes, the treatment had a positive effect on the outcome variable.
 - No, the treatment had no effect.
 - [It's too early to tell.]
@@ -201,7 +213,6 @@ Since the number of baseball games that this individual went to appears to incre
 - Not yet! We do not know whether the difference in games attended after being exposed to the ad-campaign was statistically significant, nor do we have a sense for any potential confounding variables. Try again.
 - Not yet! We do not know whether the difference in games attended after being exposed to the ad-campaign was statistically significant, nor do we have a sense for any potential confounding variables. Try again.
 - Correct! Stopping this analysis just because we like the results in the first month would be hacking our results. This month could just be due to confounders. We should let the ad campaign run for the whole season to get a better conclusion.
-
 
 ---
 
@@ -237,6 +248,9 @@ The Hammers decided to expand their sample to examine how effective their social
 - 1) Look at the first few rows of dataframe, `Baseball` with function `head`.
 - 2) Identify how many observations (`rows`) are in dataframe, `Baseball` with function `nrow`.
 - 3) Identify how many unique individuals (`id`) were sampled in dataframe, `Baseball` with functions `length` and `unique`.
+
+`@hint`
+
 
 `@pre_exercise_code`
 ```{r}
@@ -425,6 +439,9 @@ Let's now determine if the treatment effect of the Hammer's ad campaign could be
 `@instructions`
 - 1) Print dataframe `dfMonth` to the console.
 - 2) Merge `dfMonth` with dataframe `Baseball` by `month` with the `merge` function.
+
+`@hint`
+
 
 `@pre_exercise_code`
 ```{r}
@@ -718,7 +735,10 @@ skills: 1
 
 We've been looking at the effect of a social media ad campaign on attendance for a local baseball team. We found a positive average treatment effect for the ad campaign, although we also have found out that our data also has two potential confounding variables. Now the owners of the Hammers walks up to you and asks, "Did the ad campaign work?" What do you tell them?
 
-`@instructions`
+`@hint`
+
+
+`@possible_answers`
 - Yes, the positive ATE shows that it was a great success.
 - [Yes, the ads did seem to work, but this effect may have been confounded by other factors.]
 - No, there are too many other explanations for the attendance rates, so the ads clearly didn't work.
@@ -727,4 +747,3 @@ We've been looking at the effect of a social media ad campaign on attendance for
 - As a good analyst, you need to mention that there are more factors in attendance than just ads. So try again.
 - Correct! The ad campaign had a large average treatment effect on attendance, however, people also do go to more games as the weather gets warmer and their team plays better, so we do have potential confounders. Congratulations! You have now finished the Causal Inference with R - Introduction course. To continue your exploration into causal inference and learn slightly more advanced techniques for statistical inference, we highly recommend you try our next course, 'Causal Inference with R - Experiments!
 - There's no need to be a Negative Nelly here, the data did show a large and positive effect. Try again.
-

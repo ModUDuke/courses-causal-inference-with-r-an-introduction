@@ -48,6 +48,9 @@ Since we found no significant errors in their dataset in Chapter 1, Puritan Whea
 - 2) Use the `mean` function to estimate the mean `time` in dataframe `Soggy` just for flakes that were in NeoPuffs `cereal`
 - 3) In dataframe `Soggy`, subtract the mean `time` for flakes in NeoPuffs `cereal` from the mean `time` for flakes in TechnoCrunch `cereal` to determine which cereal lasts longer before it gets soggy
 
+`@hint`
+
+
 `@pre_exercise_code`
 ```{r}
 library(dplyr)
@@ -130,6 +133,9 @@ Puritan Wheat Inc. wants to know if there are any factors that might contribute 
 `@instructions`
 - 1) Use the `cor` function to estimate the correlation between `milk` and `time`
 - 2) Use the `cor` function to estimate the correlation between `fiber` and `time`
+
+`@hint`
+
 
 `@pre_exercise_code`
 ```{r}
@@ -233,24 +239,24 @@ skills: 1
 
 Suppose Eddie's Ice Cream wants to know the effect of a new chocolate ice cream recipe on how many cartons of ice cream someone buys next month. They try distributing their new chocolate ice cream to one grocery store, and after a month, they survey three regular Eddie's customers at this store. The first person surveyed bought 10 fewer cartons of Eddie's ice cream after changing the recipe, the second bought 6 more cartons, and the third bought 5 fewer cartons. Assuming that no other factors that influenced their ice cream consumption, this would mean that the experiment's unit-level causal effects were -10, 6, -5 cartons of ice cream. Based on this sample, what was the average treatment effect (ATE) of changing the Eddie's chocolate ice cream recipe on ice cream consumption?
 
-`@hint`
-
-`@instructions`
+`@possible_answers`
 - 3
 - 10
 - -7
 - [-3]
 
+`@hint`
+
+
 `@pre_exercise_code`
+```{r}
 
-`@sample_code`
+```
 
-`@feedback`
-- What does (-10 + 6 + -5)/3 equal? Try again.
-- What does (-10 + 6 + -5)/3 equal? Try again.
-- What does (-10 + 6 + -5)/3 equal? Try again.
-- Correct!
+`@sct`
+```{r}
 
+```
 
 ---
 
@@ -266,25 +272,24 @@ skills: 1
 
 Eddie's then surveyed three people who were not regular Eddie's customers. Their unit level causal effects of the change in the chocolate ice cream recipe were -1, 0, 2. If the experiment's unit-level causal effects on regular Eddie's customers was -10, 6, -5 cartons of ice cream, what is the difference between CATE(regular customers) and CATE(not regular customers)?
 
-`@hint`
-
-
-`@instructions`
+`@possible_answers`
 - [-3.33]
 - -7.33
 - 0
 - 20
 
+`@hint`
+
+
 `@pre_exercise_code`
+```{r}
 
-`@sample_code`
+```
 
-`@feedback`
-- Correct! CATE(regular) = (-10 + 6 + (-5)/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3. So the difference is -3 - 1/3 = -3.33. We see that the average effect on regular customers is much different than on non-regulars: the regular customers will buy a lot less ice cream on average.
-- Try again: CATE(regular) = (-10 + 6 + (-5))/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3.
-- Try again: CATE(regular) = (-10 + 6 + (-5))/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3.
-- Try again: CATE(regular) = (-10 + 6 + (-5))/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3.
+`@sct`
+```{r}
 
+```
 
 ---
 
@@ -384,11 +389,14 @@ Since reducing the size of HR seems to reduce the rate of employee turnover, the
 
 However, his chief operating officer (COO) warns him that reducing the size of HR might be unpopular among certain minority groups within the company, particularly among women. The COO sends the CEO a figure (illustrated in the R workspace) showing the results of his experiment among men and women. Which of the following does the figure suggest?
 
-`@instructions`
+`@possible_answers`
 - [While the pooled average treatment effect is slightly negative, and the average treatment effect for men is negative, the average treatment effect for women is positive.]
 - While the pooled average treatment effect is slightly positive, and the average treatment effect for men is positive, the average treatment effect for women is negative.
 - While the pooled average treatment effect is slightly negative, and the average treatment effect for men is positive, the average treatment effect for women is negative.
 - While the pooled average treatment effect is slightly positive, and the average treatment effect for men is negative, the average treatment effect for women is positive.
+
+`@hint`
+
 
 `@pre_exercise_code`
 ```{r}
@@ -415,18 +423,10 @@ n=382
     p+geom_point(size=3)+geom_line(size=2)+scale_y_continuous(label = percent,limits = c(0,1))
 ```
 
-`@sample_code`
+`@sct`
 ```{r}
-p<-ggplot(df, aes(x=`Control and Treatment Groups`,y=`Percent Intending to Quit`,group=Gender,color=Gender))
-    p+geom_point(size=3)+geom_line(size=2)+scale_y_continuous(label = percent,limits = c(0,1))
+
 ```
-
-`@feedback`
-- Good job! This is an example of a heterogeneous average treatment effect - the treatment has different effects on men and women. However, when men and women are pooled, this heterogeneity is masked.
-- Whoa! While you're right that there are different effects for men and for women, it looks like you're confused about which effects are negative and which are positive. Try again.
-- While you're right that the pooled effects are negative and there are different effects for men and for women, it looks like you're confused about which gender-specific effects are negative and which are positive. Look again.
-- You're right about the gender-specific effects, but not the pooled effects. Check your results again.
-
 
 ---
 

@@ -43,7 +43,10 @@ skills: 1
 
 One example we saw in the previous video was when a football player scored a touchdown on a running play. When we examine how two events are connected in our data, whether it's from a football match or from the business world, we often want to figure out which factors are most responsible for causing our outcome. In the case of the football play we saw in the video, how much credit should we give the **coach** for calling that play?
 
-`@instructions`
+`@hint`
+
+
+`@possible_answers`
 - All the credit: he chose the players on the field, he chose the play, he is in complete control
 - [Some of the credit: The players sometimes ignore the coach and just do what they want, and they have to react to what the other team is doing too]
 - None of the credit: The offense can only do what the defense allows, so it is the defensive mistakes that creates the score
@@ -99,7 +102,10 @@ The food scientists at breakfast cereal manufacturer Puritan Wheat Inc. have dev
 
 In this experiment on the two cereals, which of the following is the outcome variable in Puritan Wheat's analysis?
 
-`@instructions`
+`@hint`
+
+
+`@possible_answers`
 - The brand of cereal.
 - The amount of milk that each flake of cereal can absorb.
 - [The time it takes for the cereal to get soggy.]
@@ -110,7 +116,6 @@ In this experiment on the two cereals, which of the following is the outcome var
 - This is likely correlated with how the dependent variable, but is not mentioned in the prompt. Try again.
 - Correct! The outcome variable is one's outcome of interest. You will see it also called the dependent variable, because its value depends on the treatment. You might also see the treatment being called the independent variable, because we have the freedom to manipulate its value in an experiment.
 - Not quite. Try again.
-
 
 ---
 
@@ -126,7 +131,10 @@ skills: 1
 
 Puritan Wheat generates some data from a sample of individual flakes in a box of TechnoCrunch and from a box of its competitor's cereal, NeoPuff's. Puritan Wheat intends to examine the average time it takes for each flake to become soggy. What is the unit of analysis in this study?
 
-`@instructions`
+`@hint`
+
+
+`@possible_answers`
 - The brand of cereal.
 - The amount of milk that each flake of cereal can absorb.
 - The time it takes for the cereal to get soggy.
@@ -163,6 +171,9 @@ To get familiar with the data, follow the instructions below:
 `@instructions`
 - 1) Use the `head` function to examine the first few rows of the variable `time` in dataframe `Soggy`
 - 2) Use the `tail` function to examine the last few rows of all variables in dataframe `Soggy`
+
+`@hint`
+
 
 `@pre_exercise_code`
 ```{r}
@@ -241,6 +252,9 @@ Follow the instructions below:
 `@instructions`
 - 1) Use the `class` function to examine the format of the variable `fiber` in dataframe `Soggy`
 - 2) Use the `table` function to examine the distribution of `cereal` within the sample `Soggy`
+
+`@hint`
+
 
 `@pre_exercise_code`
 ```{r}
@@ -346,6 +360,9 @@ Before running any direct comparisons between TechnoCrunch and NeoPuffs, Puritan
 - 2) Use the `median` function to estimate the median `time` in dataframe `Soggy`
 - 3) Use the `sd` function to estimate the standard deviation of `time` in dataframe `Soggy`
 
+`@hint`
+
+
 `@pre_exercise_code`
 ```{r}
 library(dplyr)
@@ -423,6 +440,9 @@ Before running any direct comparisons between TechnoCrunch and NeoPuffs, Puritan
 - 1) Use the `min` function to estimate the minimum `time` in dataframe `Soggy` just for flakes that were in TechnoCrunch `cereal`
 - 2) Use the `summary` function to produce descriptive statistics for `time` in dataframe `Soggy` just for flakes that were in TechnoCrunch `cereal`
 
+`@hint`
+
+
 `@pre_exercise_code`
 ```{r}
 library(dplyr)
@@ -497,7 +517,7 @@ skills: 1
 
 On the right are a series of numerical distributions. The correlations between the x and y axis in each graph is about the same. What does this mean?
 
-`@instructions`
+`@possible_answers`
 - The graphs are identical.
 - [Correlations do not give a perfect summary of how a dataset is distributed.]
 - There is no meaningful difference in the distribution of datapoints across these graphs.
@@ -549,17 +569,10 @@ plot4 <- ggplot(anscombe, aes(x=x4, y=y4)) + geom_point(size=circle.size, pch=21
 grid.arrange(plot1, plot2, plot3, plot4, top='Anscombe Quartet', bottom="Syntax to produce graphs borrowed from Sean Dolinar (stats.seandolinar.com-Tutorials)")
 ```
 
-`@sample_code`
+`@sct`
 ```{r}
-grid.arrange(plot1, plot2, plot3, plot4, top='Anscombe Quadrant -- Correlation Demostration', bottom="Syntax to produce this graph borrowed from Sean Dolinar (stats.seandolinar.com)")
+
 ```
-
-`@feedback`
-- Look at the graphs to the right of the page. Are you sure they look identical?
-- Yes. This is why statisticians have created so many different types of summary statistics, and why we encourage understanding so many of them.
-- Not necessarily. The distributions certainly appear different to the eye, and so perhaps different dynamics are at work in each graph. Try again.
-- Unless the DataCamp webserver just broke, the correlation function is working perfectly, and it's not the reason these graphs seem different. Try again.
-
 
 ---
 
@@ -591,7 +604,10 @@ skills: 1
 
 As you can see in this chart, the per capita consumption of mozzarella cheese in the US is highly correlated with the number of PhDs awarded annually in Civil Engineering in the US. In fact, it’s a 95% correlation. Therefore, does this strong data prove that these two variables are **causally** connected?
 
-`@instructions`
+`@hint`
+
+
+`@possible_answers`
 - Definitely. 95% correlations do not just happen in real life—there must be a cause and effect reason behind it, even if we don’t know what it is.
 - [No. This is just a spurious correlation between random variables, and even very strong correlations do not imply causation.]
 
@@ -633,6 +649,9 @@ Using the dataset, `Nails`, find out whether Britney is at blame for the loss. S
 - 1) Using the `cor` function, estimate whether the variables `painted` and `wins` within the dataset `Nails` are correlated.
 - 2) Using the `ggplot` function, generate a scatterplot and regression line showing the above correlation.
 - 3) Based on the above, answer following: "Should Britney have painted her nails?"
+
+`@hint`
+
 
 `@pre_exercise_code`
 ```{r}
