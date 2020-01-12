@@ -312,6 +312,8 @@ set.seed(1)
     unique(Baseball$month)
     
     Solution2<-
+    summary(Solution2)
+    
 ```
 
 `@solution`
@@ -407,6 +409,11 @@ set.seed(1)
 # 2) Calculate the ATE for individuals in the `Treatment` group by subtracting the average attendance (`attended`) of this group prior to the months of the experiment (`ExpMonths`==FALSE) from the average attendance (`attended`) of this group during the experiment (`ExpMonths`==TRUE). To help get you started, we fill in the first half of this equation, so fill in the second half.
 
     Solution2<- mean(Baseball$attended[Baseball$treatment==1 & Baseball$ExpMonths==TRUE]) -
+    
+# Now let's see what that ATE estimate is by printing out the value of Solution2:
+
+    Solution2
+    
 ```
 
 `@solution`
@@ -493,9 +500,12 @@ set.seed(1)
 # 1) Print dataframe `dfMonth` to the console. This can be done by either simply typing dfMonth below, or by using the `print` function with `dfMonth`.
 
 
+
 # 2) Merge `dfMonth` with dataframe `Baseball` by `month` with the `merge` function. The merge function requires three arguments, your first dataframe, your second dataframe, and the name of the column that you want to merge by. To accomplish this, replace 'x, y, and "variable"' in the code below with 'Baseball, dfMonth, and "month"'.
 
     Baseball<-merge(x,y,by="variable")
+    
+    
 ```
 
 `@solution`
@@ -703,6 +713,8 @@ plot(byranking$ranking, byranking$attended, type="l", main="Avg Attendance in Sa
 # 4) And based on that correlation, if you see that the attendance goes up by 100 in that same month, would you expect the team's ranking value to increase, decrease, or stay the same? Write "increase", "decrease", or "stay the same" as the solution.
 
    Solution4<-""
+   
+   
 ```
 
 `@solution`
