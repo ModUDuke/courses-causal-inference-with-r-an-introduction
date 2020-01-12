@@ -253,10 +253,11 @@ Suppose Eddie's Ice Cream wants to know the effect of a new chocolate ice cream 
 
 ```
 
-`@sct`
-```{r}
-
-```
+`@feedback`
+- What does (-10 + 6 + -5)/3 equal? Try again.
+- What does (-10 + 6 + -5)/3 equal? Try again.
+- What does (-10 + 6 + -5)/3 equal? Try again.
+- Correct!
 
 ---
 
@@ -286,10 +287,12 @@ Eddie's then surveyed three people who were not regular Eddie's customers. Their
 
 ```
 
-`@sct`
-```{r}
+`@feedback`
+- Correct! CATE(regular) = (-10 + 6 + (-5)/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3. So the difference is -3 - 1/3 = -3.33. We see that the average effect on regular customers is much different than on non-regulars: the regular customers will buy a lot less ice cream on average.
+- Try again: CATE(regular) = (-10 + 6 + (-5))/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3.
+- Try again: CATE(regular) = (-10 + 6 + (-5))/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3.
+- Try again: CATE(regular) = (-10 + 6 + (-5))/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3.
 
-```
 
 ---
 
@@ -359,6 +362,10 @@ n=382
 
     Solution1<-
     
+ # 2) Now let's look at the summary() values of Solution1 to see what the value actually is.
+ 
+    summary(Solution1)
+    
 ```
 
 `@solution`
@@ -423,10 +430,11 @@ n=382
     p+geom_point(size=3)+geom_line(size=2)+scale_y_continuous(label = percent,limits = c(0,1))
 ```
 
-`@sct`
-```{r}
-
-```
+`@feedback`
+- Good job! This is an example of a heterogeneous average treatment effect - the treatment has different effects on men and women. However, when men and women are pooled, this heterogeneity is masked.
+- Whoa! While you're right that there are different effects for men and for women, it looks like you're confused about which effects are negative and which are positive. Try again.
+- While you're right that the pooled effects are negative and there are different effects for men and for women, it looks like you're confused about which gender-specific effects are negative and which are positive. Look again.
+- You're right about the gender-specific effects, but not the pooled effects. Check your results again.
 
 ---
 
@@ -484,6 +492,8 @@ n=382
 # 2) Write the code that determines the average treatment effect among women. Assign this value to Solution2.
 
     Solution2<-
+    
+    
 ```
 
 `@solution`
