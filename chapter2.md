@@ -437,7 +437,11 @@ n=382
 
 `@sct`
 ```{r}
-
+msg1="Good job! This is an example of a heterogeneous average treatment effect - the treatment has different effects on men and women. However, when men and women are pooled, this heterogeneity is masked."
+msg2="Whoa! While you're right that there are different effects for men and for women, it looks like you're confused about which effects are negative and which are positive. Try again."
+msg3="While you're right that the pooled effects are negative and there are different effects for men and for women, it looks like you're confused about which gender-specific effects are negative and which are positive. Look again."
+msg4="You're right about the gender-specific effects, but not the pooled effects. Check your results again."
+ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3, msg4))
 ```
 
 ---
