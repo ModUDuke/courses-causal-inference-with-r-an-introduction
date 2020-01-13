@@ -255,7 +255,11 @@ Suppose Eddie's Ice Cream wants to know the effect of a new chocolate ice cream 
 
 `@sct`
 ```{r}
-
+msg1="What does (-10 + 6 + -5)/3 equal? Try again."
+msg2="What does (-10 + 6 + -5)/3 equal? Try again."
+msg3="What does (-10 + 6 + -5)/3 equal? Try again."
+msg4="Correct!"
+ex() %>% check_mc(4, feedback_msgs = c(msg1, msg2, msg3, msg4))
 ```
 
 ---
@@ -288,7 +292,11 @@ Eddie's then surveyed three people who were not regular Eddie's customers. Their
 
 `@sct`
 ```{r}
-
+msg1="Correct! CATE(regular) = (-10 + 6 + (-5)/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3. So the difference is -3 - 1/3 = -3.33. We see that the average effect on regular customers is much different than on non-regulars: the regular customers will buy a lot less ice cream on average."
+msg2="Try again: CATE(regular) = (-10 + 6 + (-5))/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3."
+msg3="Try again: CATE(regular) = (-10 + 6 + (-5))/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3."
+msg4="Try again: CATE(regular) = (-10 + 6 + (-5))/3 = -3. CATE(not regular) = (-1 + 0 + 2)/3 = 1/3."
+ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3, msg4))
 ```
 
 ---
