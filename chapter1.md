@@ -609,20 +609,20 @@ xp: 50
 skills: 1
 ```
 
-![](https://assets.datacamp.com/production/repositories/1444/datasets/fdf1e1ca75881f0c95ccd9c843580761cda5612e/chart.jpeg)
+![](https://assets.datacamp.com/production/repositories/5613/datasets/141dd1f6a9e9a83bca93fa3e6bd292702d7f8a4e/chart%20resized.jpeg)
 
-As you can see in this chart, the per capita consumption of mozzarella cheese in the US is highly correlated with the number of PhDs awarded annually in Civil Engineering in the US. In fact, it’s a 95% correlation. Therefore, does this strong data prove that these two variables are **causally** connected?
+As you can see in this chart, the per capita consumption of mozzarella cheese in the US is highly correlated with the number of PhDs awarded annually in Civil Engineering in the US. In fact, it is a 95% correlation. Therefore, does this strong data prove that these two variables are **causally** connected?
 
 `@hint`
 
 
 `@possible_answers`
-- Definitely. 95% correlations do not just happen in real life—there must be a cause and effect reason behind it, even if we don’t know what it is.
+- Definitely. 95% correlations do not just happen in real life. There must be a cause and effect reason behind it, even if we do not know what it is.
 - [No. This is just a spurious correlation between random variables, and even very strong correlations do not imply causation.]
 
 `@feedback`
-- It can be so tempting to assume that any strong correlations in our data are telling us about the cause and effect relationships going on in real life, but don’t give into that temptation! We’ll need to do more to find a causality. Try again.
-- Correct! You will find many correlations in your data, sometimes very strong ones like this, but that does not mean there’s any causal relationship between them. Sometimes a correlation may help you ask better questions about what’s going on, but don’t assume they are causal by themselves.
+- It can be so tempting to assume that any strong correlations in our data are telling us about the cause and effect relationships going on in real life, but do not give into that temptation! We will need to do more to find a causality. Try again.
+- Correct! You will find many correlations in your data, sometimes very strong ones like this, but that does not mean there is any causal relationship between them. Sometimes a correlation may help you ask better questions about what is going on, but do not assume they are causal by themselves.
 
 ---
 
