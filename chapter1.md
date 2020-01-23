@@ -534,6 +534,7 @@ In this plot, there are a series of numerical distributions. The correlations be
 
 `@hint`
 
+
 `@pre_exercise_code`
 ```{r}
 library(gridExtra)
@@ -578,11 +579,14 @@ grid.arrange(plot1, plot2, plot3, plot4, top='Anscombe Quartet', bottom="Syntax 
 ```
 
 `@sct`
+```{r}
 msg1="Look at the graphs to the right of the page. Are you sure they look identical?"
 msg2="Yes. This is why statisticians have created so many different types of summary statistics, and why we encourage understanding so many of them."
 msg3="Not necessarily. The distributions certainly appear different to the eye, and so perhaps different dynamics are at work in each graph. Try again."
 msg4="Unless the webserver just broke, the correlation function is working perfectly, and it's not the reason these graphs seem different. Try again."
 ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2, msg3, msg4))
+
+```
 
 ---
 
