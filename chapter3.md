@@ -408,24 +408,25 @@ set.seed(1)
 
 # 2) Calculate the ATE for individuals in the `Treatment` group by subtracting the average attendance (`attended`) of this group prior to the months of the experiment (`ExpMonths`==FALSE) from the average attendance (`attended`) of this group during the experiment (`ExpMonths`==TRUE). To help get you started, we fill in the first half of this equation, so fill in the second half.
 
-    Solution2<- mean(Baseball$attended[Baseball$treatment==1 & Baseball$ExpMonths==TRUE]) -
+    ATE<- mean(Baseball$attended[Baseball$treatment==1 & Baseball$ExpMonths==TRUE]) -
     
-# Now let's see what that ATE estimate is by printing out the value of Solution2:
+# Now let's see what that ATE estimate is by printing out the value of ATE:
 
-    Solution2
+    ATE
     
 ```
 
 `@solution`
 ```{r}
 Baseball$ExpMonths<-Baseball$month=="July" | Baseball$month=="August" | Baseball$month=="September" 
-    Solution2<- mean(Baseball$attended[Baseball$treatment==1 & Baseball$ExpMonths==TRUE]) - mean(Baseball$attended[Baseball$treatment==1 & Baseball$ExpMonths==FALSE])
+ATE<- mean(Baseball$attended[Baseball$treatment==1 & Baseball$ExpMonths==TRUE]) - mean(Baseball$attended[Baseball$treatment==1 & Baseball$ExpMonths==FALSE])
+
 ```
 
 `@sct`
 ```{r}
     ex() %>% check_error()
-    ex() %>% check_object("Solution2") %>% check_equal()
+    ex() %>% check_object("ATE") %>% check_equal()
     success_msg("Good work! The ad campaign had a positive average treatment effect. However, there are several potential confounders that we might want to consider before declaring victory. Let's explore some in the next few questions.")
 ```
 
