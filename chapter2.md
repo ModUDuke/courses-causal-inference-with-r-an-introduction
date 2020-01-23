@@ -363,25 +363,25 @@ n=382
 
     dfTreated<-UnterHR[UnterHR$Treatment==1,]
 
-# 1) Write the code that finds the average effect of reducing the size of HR (`treatment`) on whether employees plan to leave their job in the following year (`LeaveJob`). Assign this value to Solution1.
+# 1) Write the code that finds the average effect of reducing the size of HR (`treatment`) on whether employees plan to leave their job in the following year (`LeaveJob`). Assign this value to `ATE`.
 
-    Solution1<-
+    ATE<-
     
  # 2) Now let's look at the summary() values of Solution1 to see what the value actually is.
  
-    summary(Solution1)
+    summary(ATE)
     
 ```
 
 `@solution`
 ```{r}
-Solution1<- mean(UnterHR$LeaveJob[UnterHR$Treatment==1])-mean(UnterHR$LeaveJob[UnterHR$Treatment==0])
+ATE<- mean(UnterHR$LeaveJob[UnterHR$Treatment==1])-mean(UnterHR$LeaveJob[UnterHR$Treatment==0])
 ```
 
 `@sct`
 ```{r}
 ex() %>% check_error()
-ex() %>% check_object("Solution1") %>% check_equal()
+ex() %>% check_object("ATE") %>% check_equal()
 success_msg("Good work! It seems that reducing the size of HR reduced Unter employees' intentions to leave their jobs")
 ```
 
@@ -493,27 +493,30 @@ n=382
 
     mean(UnterHR$LeaveJob[UnterHR$Treatment==1 & UnterHR$Female==0])
 
-# 1) Write the code that determines the average treatment effect among men. Assign this value to Solution1.
+# 1) Write the code that determines the average treatment effect among men. Assign this value to `CATE.men`, and then print the result.
 
-    Solution1<- 
+    CATE.men<- 
+    print()
 
-# 2) Write the code that determines the average treatment effect among women. Assign this value to Solution2.
+# 2) Write the code that determines the average treatment effect among women. Assign this value to `CATE.women`, and then print the result.
 
-    Solution2<-
-    
+    CATE.women<-
+    print()
     
 ```
 
 `@solution`
 ```{r}
-Solution1 <- mean(UnterHR$LeaveJob[UnterHR$Treatment==1 & UnterHR$Female==0])-mean(UnterHR$LeaveJob[UnterHR$Treatment==0 & UnterHR$Female==0])
-Solution2 <- mean(UnterHR$LeaveJob[UnterHR$Treatment==1 & UnterHR$Female==1])-mean(UnterHR$LeaveJob[UnterHR$Treatment==0 & UnterHR$Female==1])
+CATE.men <- mean(UnterHR$LeaveJob[UnterHR$Treatment==1 & UnterHR$Female==0])-mean(UnterHR$LeaveJob[UnterHR$Treatment==0 & UnterHR$Female==0])
+print(CATE.men)
+CATE.women <- mean(UnterHR$LeaveJob[UnterHR$Treatment==1 & UnterHR$Female==1])-mean(UnterHR$LeaveJob[UnterHR$Treatment==0 & UnterHR$Female==1])
+print(CATE.women)
 ```
 
 `@sct`
 ```{r}
 ex() %>% check_error()
-ex() %>% check_object("Solution1") %>% check_equal()
-ex() %>% check_object("Solution2") %>% check_equal()
+ex() %>% check_object("CATE.men") %>% check_equal()
+ex() %>% check_object("CATE.women") %>% check_equal()
 success_msg("Good work! We can see a clear difference in the treatment effect among men and women. This is a clear example of a conditional average treatment effect.")
 ```
