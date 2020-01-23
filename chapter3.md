@@ -709,11 +709,11 @@ plot(byranking$ranking, byranking$attended, type="l", main="Avg Attendance in Sa
   
 # 3) Based on that correlation, if the team starts the month ranked #2 but ends the month ranked #10, would you expect the attendance to increase, decrease, or stay the same? Write "increase", "decrease", or "stay the same" as the solution.
 
-   Solution3<-""
+   attendance.change<-""
 
 # 4) And based on that correlation, if you see that the attendance goes up by 100 in that same month, would you expect the team's ranking value to increase, decrease, or stay the same? Write "increase", "decrease", or "stay the same" as the solution.
 
-   Solution4<-""
+   ranking.change<-""
    
    
 ```
@@ -721,15 +721,15 @@ plot(byranking$ranking, byranking$attended, type="l", main="Avg Attendance in Sa
 `@solution`
 ```{r}
 cor(Baseball$ranking,Baseball$attended)
-Solution3<-"decrease"
-Solution4<-"decrease"
+attendance.change<-"decrease"
+ranking.change<-"decrease"
 ```
 
 `@sct`
 ```{r}
 ex() %>% check_error()
-ex() %>% check_object("Solution3") %>% check_equal()
-ex() %>% check_object("Solution4") %>% check_equal()
+ex() %>% check_object("attendance.change") %>% check_equal()
+ex() %>% check_object("ranking.change") %>% check_equal()
 
     success_msg("Good job. Negative correlations can often be confusing to interpret, and their real-world implications is not always intuitive. In this case, do people go to more baseball games when the team improves, or does the team improve when more people go to their games? We can't tell. This data just shows us that there is a negative correlation between these variables in our sample, not a causal effect.")
 ```
