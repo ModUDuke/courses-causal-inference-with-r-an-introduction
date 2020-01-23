@@ -302,32 +302,32 @@ set.seed(1)
 
 # Note: Notice that the first rows all have the same respondent id, but different months. In this case, the unit of analysis is not individuals or months, but what we could refer to as "person-months". Let's now determine our sample size of "person-months" and number of unique individuals.
 
-# 2) Identify how many observations (`rows`) are in dataframe, `Baseball` with function `nrow`. Assign this result to object "Solution1".
+# 2) Identify how many observations (`rows`) are in dataframe, `Baseball` with function `nrow()`. Assign this result to object `number.observations`.
 
-    Solution1<-
+    number.observations<-
 
 # 3) Identify how many unique individuals (`id`) were sampled in dataframe, `Baseball` with functions `length` and `unique`. To help, we provide sample code for how to determine how long the vector, Baseball$month is, and code for printing the unique months in our sample.
 
     length(Baseball$month)
     unique(Baseball$month)
     
-    Solution2<-
-    summary(Solution2)
+    number.unique<-
+    summary(number.unique)
     
 ```
 
 `@solution`
 ```{r}
 head(Baseball)
-    Solution1<-nrow(Baseball)
-    Solution2<-length(unique(Baseball$id))
+    number.observations<-nrow(Baseball)
+    number.unique<-length(unique(Baseball$id))
 ```
 
 `@sct`
 ```{r}
 ex() %>% check_error()
-ex() %>% check_object("Solution1") %>% check_equal()
-ex() %>% check_object("Solution2") %>% check_equal()
+ex() %>% check_object("number.observations") %>% check_equal()
+ex() %>% check_object("number.unique") %>% check_equal()
 success_msg("Good work! You should always explore your data before running analyses. These are very typical steps that one might take")
 ```
 
