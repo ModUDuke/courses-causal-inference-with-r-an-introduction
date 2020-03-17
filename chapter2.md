@@ -7,7 +7,7 @@ description: 'This chapter will introduce you to individual, group, and average 
 
 ```yaml
 type: VideoExercise
-key: df9b958a75
+key:
 lang: r
 xp: 50
 skills: 1
@@ -21,7 +21,7 @@ video_link: //player.vimeo.com/video/230622767
 
 ```yaml
 type: VideoExercise
-key: 41d2451b2e
+key:
 lang: r
 xp: 50
 skills: 1
@@ -35,7 +35,7 @@ video_link: //player.vimeo.com/video/276320325
 
 ```yaml
 type: NormalExercise
-key: 0eb921aaf9
+key:
 lang: r
 xp: 100
 skills: 1
@@ -122,7 +122,7 @@ success_msg("Good work! It appears that TechnoCrunch's crunchiness lasts longer 
 
 ```yaml
 type: NormalExercise
-key: 7fd76a360d
+key:
 lang: r
 xp: 100
 skills: 1
@@ -203,7 +203,7 @@ success_msg("Good work! There is a positive correlation between fiber and time. 
 
 ```yaml
 type: VideoExercise
-key: 5ebfd9aaa0
+key:
 lang: r
 xp: 50
 skills: 1
@@ -217,7 +217,7 @@ video_link: //player.vimeo.com/video/230623038
 
 ```yaml
 type: VideoExercise
-key: 6fc38f8905
+key:
 lang: r
 xp: 50
 skills: 1
@@ -231,7 +231,7 @@ video_link: //player.vimeo.com/video/230623221
 
 ```yaml
 type: MultipleChoiceExercise
-key: 6238dbab2d
+key:
 lang: r
 xp: 50
 skills: 1
@@ -268,7 +268,7 @@ ex() %>% check_mc(4, feedback_msgs = c(msg1, msg2, msg3, msg4))
 
 ```yaml
 type: MultipleChoiceExercise
-key: 2bbbcc3971
+key:
 lang: r
 xp: 50
 skills: 1
@@ -305,7 +305,7 @@ ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3, msg4))
 
 ```yaml
 type: VideoExercise
-key: 6b8a71d25a
+key:
 lang: r
 xp: 50
 skills: 1
@@ -319,7 +319,7 @@ video_link: //player.vimeo.com/video/276320364
 
 ```yaml
 type: NormalExercise
-key: 311670fb1a
+key:
 lang: r
 xp: 100
 skills: 1
@@ -391,7 +391,7 @@ success_msg("Good work! It seems that reducing the size of HR reduced Unter empl
 
 ```yaml
 type: MultipleChoiceExercise
-key: 6217752659
+key:
 lang: r
 xp: 50
 skills: 1
@@ -450,7 +450,7 @@ ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2, msg3, msg4))
 
 ```yaml
 type: NormalExercise
-key: a4ab5d9f9b
+key:
 lang: r
 xp: 100
 skills: 1
