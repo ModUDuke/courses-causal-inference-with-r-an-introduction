@@ -7,7 +7,7 @@ description: 'This chapter will introduce you to the basic concepts behind causa
 
 ```yaml
 type: VideoExercise
-key: f0b83a3301
+key:
 lang: r
 xp: 50
 skills: 1
@@ -21,7 +21,7 @@ video_link: //player.vimeo.com/video/276321141
 
 ```yaml
 type: VideoExercise
-key: 1b7bc85492
+key:
 lang: r
 xp: 50
 skills: 1
@@ -35,7 +35,7 @@ video_link: //player.vimeo.com/video/230621577
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: e9705bb45c
+key:
 lang: r
 xp: 50
 skills: 1
@@ -64,7 +64,7 @@ One example we saw in the previous video was when a football player scored a tou
 
 ```yaml
 type: VideoExercise
-key: 94317a4867
+key:
 lang: r
 xp: 50
 skills: 1
@@ -78,7 +78,7 @@ video_link: //player.vimeo.com/video/230621760
 
 ```yaml
 type: VideoExercise
-key: 5c0a93ad03
+key:
 lang: r
 xp: 50
 skills: 1
@@ -92,7 +92,7 @@ video_link: //player.vimeo.com/video/276320362
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 362bf33c36
+key:
 lang: r
 xp: 50
 skills: 1
@@ -123,7 +123,7 @@ In this experiment on the two cereals, which of the following is the outcome var
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 50d28d8b25
+key:
 lang: r
 xp: 50
 skills: 1
@@ -152,7 +152,7 @@ Puritan Wheat generates some data from a sample of individual flakes in a box of
 
 ```yaml
 type: NormalExercise
-key: db20453890
+key:
 lang: r
 xp: 100
 skills: 1
@@ -242,7 +242,7 @@ success_msg("Good work! It is often important to get a sense of your data before
 
 ```yaml
 type: NormalExercise
-key: 7371edb7d2
+key:
 lang: r
 xp: 100
 skills: 1
@@ -326,7 +326,7 @@ success_msg("Good work! The above functions will often come in handy as you cont
 
 ```yaml
 type: VideoExercise
-key: f8ced7fb09
+key:
 lang: r
 xp: 50
 skills: 1
@@ -340,7 +340,7 @@ video_link: //player.vimeo.com/video/230622159
 
 ```yaml
 type: VideoExercise
-key: 28fcd63342
+key:
 lang: r
 xp: 50
 skills: 1
@@ -354,7 +354,7 @@ video_link: //player.vimeo.com/video/276320339
 
 ```yaml
 type: NormalExercise
-key: caa5b2cf8b
+key:
 lang: r
 xp: 100
 skills: 1
@@ -437,7 +437,7 @@ success_msg("Good work! As a reminder, the difference in the median and mean of 
 
 ```yaml
 type: NormalExercise
-key: 0322894cdd
+key:
 lang: r
 xp: 100
 skills: 1
@@ -518,7 +518,7 @@ success_msg("Good work! As you may have noticed, the summary function is often a
 
 ```yaml
 type: MultipleChoiceExercise
-key: c229f94a13
+key:
 lang: r
 xp: 50
 skills: 1
@@ -594,7 +594,7 @@ ex() %>% check_mc(2, feedback_msgs = c(msg1, msg2, msg3, msg4))
 
 ```yaml
 type: VideoExercise
-key: 0f66a8c3f0
+key:
 lang: r
 xp: 50
 skills: 1
@@ -608,7 +608,7 @@ video_link: //player.vimeo.com/video/230622365
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 4b7a7da2a4
+key:
 lang: r
 xp: 50
 skills: 1
@@ -635,7 +635,7 @@ As you can see in this chart, the per capita consumption of mozzarella cheese in
 
 ```yaml
 type: VideoExercise
-key: d9d4a51011
+key:
 lang: r
 xp: 50
 skills: 1
@@ -649,7 +649,7 @@ video_link: //player.vimeo.com/video/276320346
 
 ```yaml
 type: NormalExercise
-key: bfa70779e1
+key:
 lang: r
 xp: 100
 skills: 1
