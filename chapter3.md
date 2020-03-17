@@ -7,7 +7,7 @@ description: 'This chapter will introduce you the important issues of confounder
 
 ```yaml
 type: VideoExercise
-key: 5c37f21710
+key:
 lang: r
 xp: 50
 skills: 1
@@ -21,7 +21,7 @@ video_link: //player.vimeo.com/video/230623543
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: ac9bc35c31
+key:
 lang: r
 xp: 50
 skills: 1
@@ -48,7 +48,7 @@ Why are confounding variables a potential problem for causal inference?
 
 ```yaml
 type: VideoExercise
-key: 6e830d0422
+key:
 lang: r
 xp: 50
 skills: 1
@@ -62,7 +62,7 @@ video_link: //player.vimeo.com/video/230623577
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 97e0c3c1ec
+key:
 lang: r
 xp: 50
 skills: 1
@@ -87,7 +87,7 @@ Suppose this was the best DataCamp course ever, and over the course of the past 
 
 ```yaml
 type: VideoExercise
-key: ddb24adc92
+key:
 lang: r
 xp: 50
 skills: 1
@@ -101,7 +101,7 @@ video_link: //player.vimeo.com/video/230623833
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 11e02ba59d
+key:
 lang: r
 xp: 50
 skills: 1
@@ -126,7 +126,7 @@ If I have an enormous amount of data, do I still have to worry about causal infe
 
 ```yaml
 type: VideoExercise
-key: a13b7c2ffd
+key:
 lang: r
 xp: 50
 skills: 1
@@ -140,7 +140,7 @@ video_link: //player.vimeo.com/video/230618095
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: b1da122e43
+key:
 lang: r
 xp: 50
 skills: 1
@@ -182,7 +182,7 @@ Based on the average number of games attended per month in the first 3 months, w
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 0ecec920ef
+key:
 lang: r
 xp: 50
 skills: 1
@@ -220,7 +220,7 @@ Since the number of baseball games that this individual went to appears to incre
 
 ```yaml
 type: VideoExercise
-key: 384a8c2308
+key:
 lang: r
 xp: 50
 skills: 1
@@ -234,7 +234,7 @@ video_link: //player.vimeo.com/video/276320373
 
 ```yaml
 type: NormalExercise
-key: 1b191b5c59
+key:
 lang: r
 xp: 100
 skills: 1
@@ -337,7 +337,7 @@ success_msg("Good work! You should always explore your data before running analy
 
 ```yaml
 type: NormalExercise
-key: 3c1d77fe1a
+key:
 lang: r
 xp: 100
 skills: 1
@@ -436,7 +436,7 @@ ATE<- mean(Baseball$attended[Baseball$treatment==1 & Baseball$ExpMonths==TRUE]) 
 
 ```yaml
 type: NormalExercise
-key: 85efc26bc3
+key:
 lang: r
 xp: 100
 skills: 1
@@ -527,7 +527,7 @@ success_msg("Good work! This is a common way to merge data from different sized 
 
 ```yaml
 type: NormalExercise
-key: c24635cc57
+key:
 lang: r
 xp: 100
 skills: 1
@@ -637,7 +637,7 @@ ex() %>% check_object("Solution5") %>% check_equal()
 
 ```yaml
 type: NormalExercise
-key: e7a246aa66
+key:
 lang: r
 xp: 100
 skills: 1
@@ -740,7 +740,7 @@ ex() %>% check_object("ranking.change") %>% check_equal()
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: d4e59f0ac2
+key:
 lang: r
 xp: 50
 skills: 1
